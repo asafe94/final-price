@@ -50,7 +50,13 @@ export const CalculateBtn = () => {
     
       if (business === 'HVN')
       {
-        r
+        return (
+          <>
+            <p>Preço de custo: R${cost}</p>
+            <p>Preço de venda Rodoviária: R${cost * markup.HVNRod}</p>
+            <p>Preço de venda Bonsucesso: R${cost * markup.HVNBon}</p>
+          </>
+        )
       } else if (business === 'CM')
       {
         return (
